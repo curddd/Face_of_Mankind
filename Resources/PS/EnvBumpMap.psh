@@ -1,0 +1,17 @@
+; Declare pixel shader version 1.0
+ps_1_1
+
+; Define t0 as a standard 3-vector from bumpmap
+tex t0
+
+; Perform matrix multiply to get a local normal bump.  Then
+; reflect the eye vector through the normal and sample from
+; a cubic environment map.
+texm3x3pad t1, t0_bx2
+texm3x3pad t2, t0_bx2
+texm3x3vspec t3, t0_bx2
+
+; now we need to blend between the diffuse color and the bump map based
+; upon the diffuse alpha, and then the final alpha is that in constant 0
+mul_x2 r0.rgb, v0, t3
++ mul r0.a, c0, v0

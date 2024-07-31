@@ -1,0 +1,37 @@
+# CHARACTER TRANSLATION AND ALIGNMENT FILE FOR FONTS BASED ON
+# TRUETYPE AND OPENTYPE FONT TECHNOLOGY
+
+
+# A) CHARACTER TRANSLATION FOR WINDOWS SYMBOL ENCODING
+
+{
+0,-255,61440
+-1
+}
+
+
+# B) CHARACTER PROPERTY LIST VERSION 4.0.5
+#
+# Instructions for fully processed chars:
+#
+#   Single character (compact option) ->        UniCode,AlignID
+#   Single character (regular) ->              -3,UniCode,AlignID
+#   Range of contiguous characters ->          -4,UniCode_From,UniCode_To,AlignID
+#   Range of characters with char increment -> -5,UniCode_From,UniCode_To,Increment,AlignID
+#   Range of characters, char increment=2 ->   -6,UniCode_From,UniCode_To,AlignID
+#
+# Instructions for non-processed chars:
+#
+#   Single character ->                        -103,UniCode,AlignID
+#   Range of contiguous characters ->          -104,UniCode_From,UniCode_To,AlignID
+#   Range of characters with char increment -> -105,UniCode_From,UniCode_To,Increment,AlignID
+#   Range of characters, char increment=2 ->   -106,UniCode_From,UniCode_To,AlignID
+#
+# Other instructions:
+#
+#   Comment ->                                 -2,CommentString (without commas)
+#   End of table ->                            -1 (or any other negative value)
+
+{
+-1
+}

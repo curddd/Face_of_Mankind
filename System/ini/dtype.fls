@@ -1,0 +1,93 @@
+# *** D-TYPE INITIAL FONT LIST V4.0 ***
+#
+# This file contains a list of fonts that will automatically be added to the Font Catalog
+# as soon as the corresponding D-Type Engine instance is initialized. Each row in this list
+# consists of the following parameters:
+#
+#
+# * font_format_id - Font Format ID
+#   An ID that specifies the font format (e.g. D-Type, TrueType, OpenType, Type 1).
+#   See the manual for details.
+#
+# * fuid - Unique Font Identifier (16-byte string)
+#   An optional 16-byte string selected by your application that will uniquely identify
+#   the font. Set to NULL if fuid is not needed.
+#
+# * fcnr - Font Collection Number (0 = first font in the collection)
+#   When the font file is a font collection, this is the index of a font in that
+#   collection. Set to 0 to add the first font in the collection or if the font file
+#   is not a collection.
+#
+# * cmap_id - Reserved for future. Must be set to -1.
+#
+# * caching - Caching Mode
+#   Set to 0 for standard caching scheme. See the manual for details.
+#
+# * hinting - Font Hinting. This parameter can have one of the following values:
+#   0 : disable hinting
+#   1 : use native hinting when available; auto-hinting otherwise
+#   2 : use auto-hinting exclusively
+#   3 : use native hinting when available; compact auto-hinting otherwise
+#   4 : use compact auto-hinting exclusively
+#
+# * nr_of_streams - Number of streams that will supply the font data.
+#   Most font formats contain all vital font data in a single stream (file). Therefore,
+#   this parameter is typically 1. Some font formats (e.g. Type 1) may supply additional
+#   font data via additional streams. In this case nr_of_streams will be greater than 1.
+#   See the manual for details on how those font formats utilize the additional streams.
+#
+# * A sequence of stream descriptors, one descriptor for each stream that will supply the
+#   font data. Each stream descriptor consists of the following parameters:
+#
+#     * stream_id      - identifies the stream type. See the manual for details.
+#     * stream_locator - stream type specific locator (e.g. file path). See the manual for details.
+#
+#   Regardless of the font format, the first stream descriptor in the sequence always
+#   supplies vital font data. 
+#
+# * reserved  - Reserved for future. Must be set to NULL.
+#
+#
+# The parameters in each row must be separated by a single comma and specified in precisely
+# the same order as listed above.
+#
+# The last row must always be -1. This is an end-of-list indicator.
+
+{
+0,S001M_SIMPLE001A,0,-1,0,1,1,0,system\fonts\simple.dtf,NULL
+0,S001M_TERMIN001A,0,-1,0,1,1,0,system\fonts\terminal.dtf,NULL
+0,S001M_MON_BD____,0,-1,0,1,1,0,system\fonts\monark_bd.dtf,NULL
+0,S001M_MON_BD_I__,0,-1,0,1,1,0,system\fonts\monark_bd_i.dtf,NULL
+0,S001M_MON_BL____,0,-1,0,1,1,0,system\fonts\monark_bl.dtf,NULL
+0,S001M_MON_BL_I__,0,-1,0,1,1,0,system\fonts\monark_bl_i.dtf,NULL
+0,S001M_MON_LT____,0,-1,0,1,1,0,system\fonts\monark_lt.dtf,NULL
+0,S001M_MON_LT_I__,0,-1,0,1,1,0,system\fonts\monark_lt_i.dtf,NULL
+0,S001M_MON_RG____,0,-1,0,1,1,0,system\fonts\monark_rg.dtf,NULL
+0,S001M_MON_RG_I__,0,-1,0,1,1,0,system\fonts\monark_rg_i.dtf,NULL
+0,S001M_NEUT_BD___,0,-1,0,1,1,0,system\fonts\neut_bd.dtf,NULL
+0,S001M_NEUT_BD_I_,0,-1,0,1,1,0,system\fonts\neut_bd_i.dtf,NULL
+0,S001M_NEUT_TH___,0,-1,0,1,1,0,system\fonts\neut_th.dtf,NULL
+0,S001M_NEUT_TH_I_,0,-1,0,1,1,0,system\fonts\neut_th_i.dtf,NULL
+0,S001M_NEUT_RG___,0,-1,0,1,1,0,system\fonts\neut_rg.dtf,NULL
+0,S001M_NEUT_RG_I_,0,-1,0,1,1,0,system\fonts\neut_rg_i.dtf,NULL
+0,S001M_REVA_BD___,0,-1,0,1,1,0,system\fonts\revalo_bd.dtf,NULL
+0,S001M_REVA_BD_I_,0,-1,0,1,1,0,system\fonts\revalo_bd_i.dtf,NULL
+0,S001M_REVA_BL___,0,-1,0,1,1,0,system\fonts\revalo_bl.dtf,NULL
+0,S001M_REVA_BL_I_,0,-1,0,1,1,0,system\fonts\revalo_bl_i.dtf,NULL
+0,S001M_REVA_LT___,0,-1,0,1,1,0,system\fonts\revalo_lt.dtf,NULL
+0,S001M_REVA_LT_I_,0,-1,0,1,1,0,system\fonts\revalo_lt_i.dtf,NULL
+0,S001M_REVA_RG___,0,-1,0,1,1,0,system\fonts\revalo_rg.dtf,NULL
+0,S001M_REVA_RG_I_,0,-1,0,1,1,0,system\fonts\revalo_rg_i.dtf,NULL
+0,S001M_THR_BD____,0,-1,0,1,1,0,system\fonts\thr_bd.dtf,NULL
+0,S001M_THR_BD_I__,0,-1,0,1,1,0,system\fonts\thr_bd_i.dtf,NULL
+0,S001M_THR_RG____,0,-1,0,1,1,0,system\fonts\thr_rg.dtf,NULL
+0,S001M_THR_RG_I__,0,-1,0,1,1,0,system\fonts\thr_rg_i.dtf,NULL
+0,S001M_OPT_BD____,0,-1,0,1,1,0,system\fonts\opt_bd.dtf,NULL
+0,S001M_OPT_RG____,0,-1,0,1,1,0,system\fonts\opt_rg.dtf,NULL
+0,S001M_TYPO_RG___,0,-1,0,1,1,0,system\fonts\typo_rg.dtf,NULL
+-1
+}
+
+
+# END OF FILE
+

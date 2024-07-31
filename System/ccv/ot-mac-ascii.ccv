@@ -1,0 +1,83 @@
+# CHARACTER TRANSLATION AND ALIGNMENT FILE FOR FONTS BASED ON
+# TRUETYPE AND OPENTYPE FONT TECHNOLOGY
+
+
+# A) CHARACTER TRANSLATION FOR APPLE MACINTOSH ASCII ENCODING
+
+{
+1,-255,1
+-1
+}
+
+
+# B) CHARACTER PROPERTY LIST VERSION 4.0.5
+#
+# Instructions for fully processed chars:
+#
+#   Single character (compact option) ->        UniCode,AlignID
+#   Single character (regular) ->              -3,UniCode,AlignID
+#   Range of contiguous characters ->          -4,UniCode_From,UniCode_To,AlignID
+#   Range of characters with char increment -> -5,UniCode_From,UniCode_To,Increment,AlignID
+#   Range of characters, char increment=2 ->   -6,UniCode_From,UniCode_To,AlignID
+#
+# Instructions for non-processed chars:
+#
+#   Single character ->                        -103,UniCode,AlignID
+#   Range of contiguous characters ->          -104,UniCode_From,UniCode_To,AlignID
+#   Range of characters with char increment -> -105,UniCode_From,UniCode_To,Increment,AlignID
+#   Range of characters, char increment=2 ->   -106,UniCode_From,UniCode_To,AlignID
+#
+# Other instructions:
+#
+#   Comment ->                                 -2,CommentString (without commas)
+#   End of table ->                            -1 (or any other negative value)
+
+{
+-2,--- Chars ! " # $ % &
+-104,33,38,-1
+-2,--- Digits 0-9
+-4,48,51,3
+-104,52,55,-3
+-4,56,57,3
+-2,--- Char ?
+-103,63,-1
+-2,--- Latin A-Z
+-4,65,70,1
+-103,71,-1
+-4,72,73,1
+-103,74,-1
+-4,75,80,1
+-104,81,82,-1
+-4,83,90,1
+-2,--- Latin a-z
+97,2
+-103,98,-2
+99,2
+-103,100,-2
+101,2
+-104,102,108,-2
+-4,109,111,2
+-104,112,113,-2
+-4,114,115,2
+-103,116,-2
+-4,117,120,2
+-103,121,-2
+122,2
+-2,--- Mac specific
+-104,128,134,-1
+-104,135,159,-2
+-103,162,-2
+-103,163,-1
+-103,167,-1
+-103,180,-1
+-103,181,-2
+-104,190,191,-2
+-103,196,-2
+-104,203,206,-1
+-103,207,-2
+-103,216,-2
+-103,217,-1
+-104,229,239,-1
+-104,241,244,-1
+-1
+}
